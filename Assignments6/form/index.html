@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        p{
+            display: none;
+            font-size: 8px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="col-md-4  mt-5 offset-4 card p-5">
+        <form name="form" onsubmit="return validateForm()" action="">
+            <div class="form-group">
+
+                <label for="">Name</label>
+                <input class="form-control" type="text" name="name" id="name">
+                <p id="pName" > Please enter user name</p>
+                <label for="">Email</label>
+                <input class="form-control" type="text" name="email" id="email">
+                <p id="pEmail"> Please enter valid email</p>
+
+                <label for="">Age</label>
+                <input class="form-control" type="text" name="age" id="age">
+                <p id="pAge"> Please enter valid age</p>
+
+                <label for="">Mobile</label>
+                <input class="form-control" type="text" name="mobile" id="mobile">
+                <p id="pMobile"> Please enter valid mobile number</p>
+
+                <div class=" offset-5 mt-3">
+                    <button class="btn btn-outline-info " id="login" type="submit">submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
